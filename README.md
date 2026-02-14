@@ -6,7 +6,7 @@
 
 <a href="https://trendshift.io/repositories/15604" target="_blank"><img src="https://trendshift.io/api/badge/repositories/15604" alt="KeygraphHQ%2Fvarunax | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
 
-<img src="./assets/varunax-screen.png?v=2" alt="VarunaX Screen" width="100%">
+<img src="./assets/varunax-screen.png?v=3" alt="VarunaX Screen" width="100%">
 
 # VarunaX is your fully autonomous AI pentester.
 
