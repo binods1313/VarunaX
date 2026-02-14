@@ -44,9 +44,7 @@ VarunaX closes this gap by acting as your on-demand whitebox pentester. It doesn
 
 ## 🎬 See VarunaX in Action
 
-**Real Results**: VarunaX discovered 20+ critical vulnerabilities in OWASP Juice Shop, including complete auth bypass and database exfiltration. [See full report →](sample-reports/varunax-report-juice-shop.md)
-
-![Demo](assets/varunax-action.gif)
+_Video coming soon..._
 
 ## ✨ Features
 
