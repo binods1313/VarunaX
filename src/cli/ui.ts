@@ -13,7 +13,7 @@ export function showHelp(): void {
   console.log(chalk.gray('Automated security assessment tool\n'));
 
   console.log(chalk.yellow.bold('USAGE:'));
-  console.log('  shannon <WEB_URL> <REPO_PATH> [--config config.yaml] [--output /path/to/reports]\n');
+  console.log('  varunax <WEB_URL> <REPO_PATH> [--config config.yaml] [--output /path/to/reports]\n');
 
   console.log(chalk.yellow.bold('OPTIONS:'));
   console.log(
@@ -31,10 +31,10 @@ export function showHelp(): void {
   console.log('  --help               Show this help message\n');
 
   console.log(chalk.yellow.bold('EXAMPLES:'));
-  console.log('  shannon "https://example.com" "/path/to/local/repo"');
-  console.log('  shannon "https://example.com" "/path/to/local/repo" --config auth.yaml');
-  console.log('  shannon "https://example.com" "/path/to/local/repo" --output /path/to/reports');
-  console.log('  shannon "https://example.com" "/path/to/local/repo" --pipeline-testing\n');
+  console.log('  varunax "https://example.com" "/path/to/local/repo"');
+  console.log('  varunax "https://example.com" "/path/to/local/repo" --config auth.yaml');
+  console.log('  varunax "https://example.com" "/path/to/local/repo" --output /path/to/reports');
+  console.log('  varunax "https://example.com" "/path/to/local/repo" --pipeline-testing\n');
 
   console.log(chalk.yellow.bold('REQUIREMENTS:'));
   console.log('  • WEB_URL must start with http:// or https://');

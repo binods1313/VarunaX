@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(copy:*)",
+      "Bash(node:*)",
+      "Bash(npm run test)",
+      "Bash(npm install:*)",
+      "Bash(npx vitest run:*)",
+      "Bash(git checkout:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nfeat: VarunaX browser OS - First Sprint\n\n## Summary\n- Add design tokens with light-green palette \\(IBM Plex Sans, JetBrains Mono\\)\n- Implement window manager with dock, menu bar, and app launcher\n- Add Dexter financial data client with mock data\n- Implement paper trading system with position sizing\n- Add CI workflow with Vitest tests\n\n## New Packages\n- @varunax/design-tokens: CSS variables and design system\n- @varunax/window-manager: OS shell components\n- @varunax/dexter: Financial research client\n- @varunax/trading: Paper trading system\n\n## Test Results\n- 8 tests passing \\(trading store\\)\n\nCo-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nfeat: VarunaX v1.0.0 - Browser OS with Financial Trading\n\n## First Sprint \\(40 story points\\)\n\n### Migration\n- Rename shannon→varunax across 105+ files\n- Update CLI, configs, docs, and assets\n- Update package.json name to \"varunax\"\n\n### Design Tokens\n- Create CSS variables for light-green palette\n- Typography: IBM Plex Sans + JetBrains Mono\n- Spacing, shadows, radius, motion, z-index scales\n\n### Window Manager\n- Zustand store for window state\n- Draggable/resizable Window component\n- Dock with magnification effect\n- MenuBar with keyboard shortcuts\n- App Launcher \\(Cmd+Space\\)\n\n### Dexter Integration\n- Mock financial data client\n- Stock prices for AAPL, MSFT, GOOGL, etc.\n- Company financials, SEC filings, DCF valuations\n- FinancialDashboard component\n\n### Paper Trading\n- Trading panel with order entry\n- Position sizing calculator\n- Order confirmation modal\n- Audit logging\n- $100k starting cash\n\n### CI + Tests\n- GitHub Actions workflow\n- Vitest test setup\n- 8 unit tests for trading store\n\nCo-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>\nEOF\n\\)\")"
+    ]
+  }
+}
