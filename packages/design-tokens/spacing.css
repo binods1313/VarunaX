@@ -1,0 +1,38 @@
+/**
+ * VarunaX Design Tokens - Spacing
+ * 4px base, 0.25rem increments
+ */
+
+:root {
+  /* Base spacing unit */
+  --spacing-unit: 4px;
+
+  /* Spacing scale */
+  --spacing-0: 0;
+  --spacing-1: 4px;    /* 0.25rem */
+  --spacing-2: 8px;    /* 0.5rem */
+  --spacing-3: 12px;   /* 0.75rem */
+  --spacing-4: 16px;   /* 1rem */
+  --spacing-5: 20px;   /* 1.25rem */
+  --spacing-6: 24px;   /* 1.5rem */
+  --spacing-8: 32px;   /* 2rem */
+  --spacing-10: 40px;  /* 2.5rem */
+  --spacing-12: 48px; /* 3rem */
+  --spacing-16: 64px; /* 4rem */
+  --spacing-20: 80px; /* 5rem */
+  --spacing-24: 96px; /* 6rem */
+
+  /* Component-specific spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 48px;
+
+  /* Layout spacing */
+  --spacing-page-padding: 24px;
+  --spacing-section-gap: 32px;
+  --spacing-card-padding: 20px;
+  --spacing-input-padding: 12px;
+}

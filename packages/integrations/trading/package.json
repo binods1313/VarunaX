@@ -1,0 +1,37 @@
+{
+  "name": "@varunax/trading",
+  "version": "1.0.0",
+  "description": "VarunaX Trading System - Paper trading, order management, and audit logging",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "zustand": "^4.0.0"
+  },
+  "dependencies": {
+    "zustand": "^4.5.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "typescript": "^5.0.0"
+  },
+  "keywords": [
+    "trading",
+    "paper-trading",
+    "stocks",
+    "orders",
+    "portfolio",
+    "varunax"
+  ],
+  "author": "VarunaX Team",
+  "license": "MIT"
+}

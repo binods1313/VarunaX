@@ -1,0 +1,28 @@
+/**
+ * VarunaX Design Tokens - Z-Index Scale
+ */
+
+:root {
+  /* ============================================
+   * Z-Index Scale
+   * ============================================ */
+  --z-index-base: 0;
+  --z-index-dropdown: 100;
+  --z-index-sticky: 200;
+  --z-index-fixed: 300;
+  --z-index-modal-backdrop: 400;
+  --z-index-modal: 500;
+  --z-index-popover: 600;
+  --z-index-tooltip: 700;
+  --z-index-toast: 800;
+  --z-index-notification: 900;
+
+  /* ============================================
+   * OS-specific Z-Index
+   * ============================================ */
+  --z-index-menu: 400;
+  --z-index-dock: 500;
+  --z-index-window-base: 1000;
+  --z-index-menubar: 1500;
+  --z-index-app-launcher: 2000;
+}

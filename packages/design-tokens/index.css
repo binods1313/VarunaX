@@ -1,0 +1,109 @@
+/**
+ * VarunaX Design Tokens
+ *
+ * A comprehensive design system for VarunaX Browser OS.
+ * Import this file to use all design tokens in your application.
+ *
+ * @usage
+ *   import '@varunax/design-tokens';
+ *
+ * @example
+ *   .my-component {
+ *     color: var(--text-primary);
+ *     background: var(--surface-base);
+ *     border-radius: var(--radius-md);
+ *     box-shadow: var(--shadow-md);
+ *   }
+ */
+
+/* Core tokens - Order matters for cascade */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+/* Base - must come first */
+@import './colors.css';
+@import './spacing.css';
+@import './typography.css';
+
+/* Component tokens */
+@import './shadows.css';
+@import './radius.css';
+@import './motion.css';
+@import './z-index.css';
+
+/* ============================================
+ * Base Reset & Global Styles
+ * ============================================ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-normal);
+  color: var(--text-primary);
+  background-color: var(--surface-base);
+}
+
+/* ============================================
+ * Selection Colors
+ * ============================================ */
+::selection {
+  background-color: var(--color-primary-200);
+  color: var(--text-primary);
+}
+
+/* ============================================
+ * Focus Styles
+ * ============================================ */
+:focus-visible {
+  outline: none;
+  box-shadow: var(--shadow-focus);
+}
+
+/* ============================================
+ * Scrollbar Styling
+ * ============================================ */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--surface-subtle);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-default);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-tertiary);
+}
+
+/* ============================================
+ * Utility Classes (optional)
+ * ============================================ */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

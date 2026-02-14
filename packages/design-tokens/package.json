@@ -1,0 +1,22 @@
+{
+  "name": "@varunax/design-tokens",
+  "version": "1.0.0",
+  "description": "VarunaX Design System - CSS Variables and Design Tokens",
+  "main": "index.css",
+  "style": "index.css",
+  "files": [
+    "*.css"
+  ],
+  "keywords": [
+    "design-tokens",
+    "css-variables",
+    "varunax",
+    "design-system"
+  ],
+  "author": "VarunaX Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/varunax/varunax"
+  }
+}

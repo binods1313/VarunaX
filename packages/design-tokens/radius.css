@@ -1,0 +1,35 @@
+/**
+ * VarunaX Design Tokens - Border Radius
+ */
+
+:root {
+  /* ============================================
+   * Border Radius
+   * ============================================ */
+  --radius-none: 0;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 24px;
+  --radius-full: 9999px;
+
+  /* ============================================
+   * Component-specific Radius
+   * ============================================ */
+  --radius-button: var(--radius-md);
+  --radius-input: var(--radius-md);
+  --radius-card: var(--radius-lg);
+  --radius-modal: var(--radius-xl);
+  --radius-tooltip: var(--radius-md);
+  --radius-badge: var(--radius-full);
+
+  /* ============================================
+   * Specific Element Radius
+   * ============================================ */
+  --radius-window: var(--radius-xl);
+  --radius-dock: var(--radius-xl);
+  --radius-dock-icon: var(--radius-lg);
+  --radius-menu: var(--radius-lg);
+  --radius-dropdown: var(--radius-md);
+}
