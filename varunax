@@ -1,5 +1,5 @@
 #!/bin/bash
-# Shannon CLI - AI Penetration Testing Framework
+# VarunaX CLI - AI Penetration Testing Framework
 
 set -e
 
@@ -35,11 +35,11 @@ show_help() {
            AI Penetration Testing Framework
 
 Usage:
-  ./shannon start URL=<url> REPO=<name>   Start a pentest workflow
-  ./shannon logs ID=<workflow-id>         Tail logs for a specific workflow
-  ./shannon query ID=<workflow-id>        Query workflow progress
-  ./shannon stop                          Stop all containers
-  ./shannon help                          Show this help message
+  ./varunax start URL=<url> REPO=<name>   Start a pentest workflow
+  ./varunax logs ID=<workflow-id>         Tail logs for a specific workflow
+  ./varunax query ID=<workflow-id>        Query workflow progress
+  ./varunax stop                          Stop all containers
+  ./varunax help                          Show this help message
 
 Options for 'start':
   REPO=<name>            Folder name under ./repos/ (e.g. REPO=repo-name)
@@ -52,12 +52,12 @@ Options for 'stop':
   CLEAN=true             Remove all data including volumes
 
 Examples:
-  ./shannon start URL=https://example.com REPO=repo-name
-  ./shannon start URL=https://example.com REPO=repo-name CONFIG=./config.yaml
-  ./shannon start URL=https://example.com REPO=repo-name OUTPUT=./my-reports
-  ./shannon logs ID=example.com_shannon-1234567890
-  ./shannon query ID=shannon-1234567890
-  ./shannon stop CLEAN=true
+  ./varunax start URL=https://example.com REPO=repo-name
+  ./varunax start URL=https://example.com REPO=repo-name CONFIG=./config.yaml
+  ./varunax start URL=https://example.com REPO=repo-name OUTPUT=./my-reports
+  ./varunax logs ID=example.com_varunax-1234567890
+  ./varunax query ID=varunax-1234567890
+  ./varunax stop CLEAN=true
 
 Monitor workflows at http://localhost:8233
 EOF
@@ -101,7 +101,7 @@ ensure_containers() {
   fi
 
   # Need to start containers
-  echo "Starting Shannon containers..."
+  echo "Starting VarunaX containers..."
   if [ "$REBUILD" = "true" ]; then
     # Force rebuild without cache (use when code changes aren't being picked up)
     echo "Rebuilding with --no-cache..."
@@ -130,7 +130,7 @@ cmd_start() {
   # Validate required vars
   if [ -z "$URL" ] || [ -z "$REPO" ]; then
     echo "ERROR: URL and REPO are required"
-    echo "Usage: ./shannon start URL=<url> REPO=<name>"
+    echo "Usage: ./varunax start URL=<url> REPO=<name>"
     exit 1
   fi
 
@@ -197,7 +197,7 @@ cmd_start() {
     # Set ANTHROPIC_BASE_URL to route through router
     export ANTHROPIC_BASE_URL="http://router:3456"
     # Set auth token to match router's APIKEY
-    export ANTHROPIC_AUTH_TOKEN="shannon-router-key"
+    export ANTHROPIC_AUTH_TOKEN="varunax-router-key"
   fi
 
   # Ensure audit-logs directory exists with write permissions for container user (UID 1001)
@@ -235,7 +235,7 @@ cmd_logs() {
 
   if [ -z "$ID" ]; then
     echo "ERROR: ID is required"
-    echo "Usage: ./shannon logs ID=<workflow-id>"
+    echo "Usage: ./varunax logs ID=<workflow-id>"
     exit 1
   fi
 
@@ -265,7 +265,7 @@ cmd_logs() {
     echo "  - Workflow hasn't started yet"
     echo "  - Workflow ID is incorrect"
     echo ""
-    echo "Check: ./shannon query ID=$ID for workflow details"
+    echo "Check: ./varunax query ID=$ID for workflow details"
     exit 1
   fi
 }
@@ -275,7 +275,7 @@ cmd_query() {
 
   if [ -z "$ID" ]; then
     echo "ERROR: ID is required"
-    echo "Usage: ./shannon query ID=<workflow-id>"
+    echo "Usage: ./varunax query ID=<workflow-id>"
     exit 1
   fi
 
